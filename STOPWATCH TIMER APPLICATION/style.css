@@ -1,0 +1,116 @@
+@font-face {
+    font-family: myfont;
+    src: url(assets/stagera/Stagera.otf);
+}
+
+body{
+    background: linear-gradient(90deg, rgba(222,82,197,1) 0%, rgba(163,54,118,1) 50%);
+    color: rgb(54, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: myfont;
+
+}
+
+.container{
+    background-color: lightgray;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 0 12px rgba(119, 136, 153, 0.733);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.stopwatch{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.timer{
+    background-color: white;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px darkgray;
+    animation: pulse 1.1s ease infinite alternate;
+}
+
+@keyframes pulse {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.04);
+    }
+}
+
+.timer span{
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+}
+
+.controls{
+    display: flex;
+    gap: 1.5rem;
+}
+
+button{
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(185, 50, 70);
+    color: rgb(196, 196, 196);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    /*margin-top: 5px;*/
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 12px rgb(221, 124, 139);
+
+}
+
+button:hover{
+    background-color: rgb(233, 73, 100);
+}
+
+.laps-title{
+    font-family: 1.5rem;
+
+}
+
+.laps{
+    width: 100%;
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    max-height: 200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgb(0,0,0,0.1);
+    text-align: center;
+
+}
+
+li {
+padding: 1rem;
+border-bottom: 1px solid lightgray;
+
+}
+
+li span {
+    font-weight: 700;
+}
