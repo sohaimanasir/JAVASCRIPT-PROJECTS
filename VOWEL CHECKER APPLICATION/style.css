@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #97bc62;
+}
+.container {
+  background-color: #2c5f2d;
+  backdrop-filter: blur(10);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  animation: neonGlow 1s infinite alternate;
+}
+
+@keyframes neonGlow {
+  from {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  }
+  to {
+    box-shadow: 0px 0px 10px #45a528, 0px 0px 10px #56b42b, 0px 0px 10px #277205;
+  }
+}
